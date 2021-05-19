@@ -1,0 +1,81 @@
+<DOCTYPE! html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulário</title>
+        <style>
+            #area{
+                position: relative;
+                left: 37%;
+                top: 19%;
+                width: 320px;
+                height: 270px;
+            }
+            body{
+            background: rgb(250, 186, 173);
+        }
+            input{
+                background: #FFFFFF;
+                color: black;
+            }
+            label{
+                color: black;
+                font-family: cursive;
+            }
+            h2{
+            color: navy;
+            font-family: cursive;
+            }
+            fieldset{
+                width: 300px;
+                display: block;
+            }
+            form{
+                margin: 40px 0;
+                display: inline-block;
+                position: relative;
+            }
+            #formulario{
+                margin:50px;
+            }
+            .enviar{
+                width: 25%;
+            padding: 10px 0;
+            margin: 10px 60px;
+            background: green;
+            color: white;
+            font-weight: bold;
+            font-size: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+            }
+
+        </style>
+        <link href="formulario.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="area">
+            <fieldset>
+                <form id="formulario">
+
+                    <h2>Por favor, preencha o formulário a seguir: </h2>
+
+                    <label><b>Seu nome</b>
+                    <input type="text" required placeholder="Ex: Paula dos Santos">
+                    <br>
+                
+                    <label><b>Email</label></b>
+                    <input type="email" required placeholder="Ex: seuemail@gmail.com">
+                    <br>
+                    
+                    <label><b>Número de celular</label></b>
+                    <input type="number" required placeholder="(00) 00000-0000">
+                    
+
+
+                    <input type="submit" class="enviar" name="Enviar" value="enviar">
+                </form>
+            </fieldset>
+        </div>
+    
+</html>
